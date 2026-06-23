@@ -101,7 +101,7 @@ export class AppComponent {
   }
 
   worldMusicList = [  
-    { name: 'Brian  Simpson Barcelona', link: ['/Barcelona', 'fToQyqufe3w'] }, 
+   /*  { name: 'Brian  Simpson Barcelona', link: ['/Barcelona', 'fToQyqufe3w'] },  */
     { name: ' Benny Rivers – Step by Step In Time', link: ['/StepByStep', 'lRGG1dqWotU'] },  
     { name: 'Brian Simpson  – Brcelona', link: ['/Barcelona', 'fToQyqufe3w'] }, 
     { name: ' Whitney Houston - I Will Always Love You', link: ['/AlwaysLoveYou', '3JWTaaS7LdU'] },  
