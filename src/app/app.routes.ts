@@ -52,7 +52,7 @@ export const routes: Routes = [
   { path: 'Hortense/:videoId', component: YoutubeComponent },
   { path: 'BonbonSucré/:videoId', component: YoutubeComponent },
   { path: 'NzotoMoko/:videoId', component: YoutubeComponent },  
-  { path: 'FayaTMosol0/:videoId', component: YoutubeComponent }, 
+  { path: 'FayaTMosolo/:videoId', component: YoutubeComponent }, 
   { path: 'ZéroFaute/:videoId', component: YoutubeComponent },
   { path: 'PointFinal/:videoId', component: YoutubeComponent },
   { path: 'Coucou/:videoId', component: YoutubeComponent },
