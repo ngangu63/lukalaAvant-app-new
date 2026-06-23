@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12">
+    <iframe style="width: 95vw; height: 95vh; position: relative;
+    margin-right: 35px;
+    margin-top: 0px;
+    margin-bottom: 60px;" *ngIf="sanitizedUrl" [src]="sanitizedUrl" frameborder="0" allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+
+<div *ngIf="(currentName1 || currentName2 || currentName3) && myBoolean" class="scrolling-text"
+  style="width: 95vw; height: 10vh; position: relative; margin-bottom: 35px; z-index: 20;">
+  <span [ngStyle]="{ 'color': currentColor1 }">{{ htmlName1 }}</span>
+  <span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
+
+  <span [ngStyle]="{ 'color': currentColor2 }">{{ htmlName2 }}</span>
+  <span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
+
+  <span [ngStyle]="{ 'color': currentColor3 }">{{ htmlName3 }}</span>
+</div>
+
+<div *ngIf="!myBoolean" class="scrolling-text"
+  style="width: 95vw; height: 10vh; position: relative; margin-bottom: 35px; z-index: 20;">
+
+  <span [ngStyle]="{ 'color': currentColor4 }">
+    La réunion de l'Assemblée Générale se tiendra le dimanche 24 Novembre 2024 à 22h00, heure de Paris. La présence de tous les membres est vivement attendue.
+  </span>
+
+</div>

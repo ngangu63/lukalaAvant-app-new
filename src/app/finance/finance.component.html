@@ -1,0 +1,52 @@
+<!-- excel-reader.component.html -->
+<div style="margin-top: 15px;
+  margin-bottom: 55px;">
+  <div class="container mt-5" *ngIf="excelData.length > 0">
+    <div class="table-responsive" style="max-height: 1000px; overflow-y: auto;">
+      <table class="table table-bordered table-hover caption-top">
+        <caption class="fs-2">Contribution des membres</caption>
+        <thead class="table-light">
+          <tr>
+            <!-- <th *ngFor="let header of excelData[0]">{{ header }}</th> -->
+            <th *ngFor="let header of excelData[0]" [innerHTML]="formatHeader(header, 25)"></th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr *ngFor="let row of excelData.slice(1); let i = index"
+            [ngClass]="{'table-primary': i % 2 === 0, 'table-secondary': i % 2 !== 0}">
+
+            <td *ngFor="let cell of row; let j = index">
+              <span *ngIf="j<= 2 && row[0]===null" style="font-size: 0;">{{ cell }}</span>
+              <span *ngIf="j<= 2 && row[0]!==null" style="text-align: center;">{{ cell }}</span>
+              <span *ngIf="j>= 2 && row[0]===null" style="font-size: 0;">{{ cell }}</span>
+              <span *ngIf="j>2 && row[1]==='$'" [style.color]="getColor(cell)">{{ cell |
+                currency:'USD':'symbol':'1.2-2'}}</span>
+              <span *ngIf="j>2 && row[1]==='€'" [style.color]="getColor(cell)">{{ cell |
+                currency:'EUR':'symbol':'1.2-2'}}</span>
+
+              <span *ngIf="j>2 && row[0]==='TOTAL (Dollar)'" style="font-weight: bold;">{{ cell |
+                currency:'USD':'symbol':'1.2-2'}}</span>
+              <span *ngIf="j>2 && row[0]==='TOTAL (Euro)'" style="font-weight: bold;">{{ cell |
+                currency:'EUR':'symbol':'1.2-2'}}</span>
+
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="container mt-5" *ngIf="excelData.length === 0">
+    <div class="alert alert-warning" role="alert">
+      <div class="spinner-border text-warning me-2" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      Loading Excel data...
+    </div>
+  </div>
+
+
+
+
+</div>

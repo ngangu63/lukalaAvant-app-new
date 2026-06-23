@@ -1,0 +1,673 @@
+<style>
+  .dropdown-menu {
+    max-height: 350px;
+    overflow-y: auto;
+  }
+</style>
+
+<div style="width: 95%; margin: auto">
+  <div>
+    <div class="position-relative" style="width: 100%; height: 200px">
+      <div
+        class="p-5 text-center bg-image w-100 h-100 rounded-3"
+        style="
+          background-image: url(&quot;assets/images/CantineVersion2.jpg&quot;);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          position: relative;
+        "
+      >
+        <img
+          src="assets/images/LogoLND.jpeg"
+          class="position-absolute top-0 start-0"
+          style="width: 20%; height: auto; max-width: 200px; max-height: 200px"
+          alt="Example Image"
+        />
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-8 text-white text-center">
+              <h1 class="mb-3">Lukala Ngangu Développement</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--      <div><img src="assets/images/LogoLND.jpeg" class="img-fluid rounded" alt="logo" style="width: 5rem;"></div>
+      <div class="text-white"> 
+        <h1 class="mb-3">Lukala Ngangu Développement</h1>
+      </div>
+    </div> -->
+    <div>
+      <nav
+        class="navbar navbar-expand-lg border-bottom border-body"
+        style="width: 100%; background-color: #e3f2fd"
+      >
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#/Accueil"
+                  >Accueil</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Membres
+                </a>
+                <ul class="dropdown-menu">
+                  <!--                   <li>
+                    <a class="dropdown-item" href="#/LesDirigeants"
+                      >Équipe dirigeante</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li> -->
+                  <!--                   <li>
+                    <a class="dropdown-item" href="#/TousLesMembres">Membres</a>
+                  </li> -->
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/TousLesMembres"
+                      style="background-color: blue; color: white"
+                      >Membres</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <!--                   <li><a class="dropdown-item" href="#/Contact">Contact</a></li> -->
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/Contact"
+                      style="background-color: green; color: white"
+                      >Contact</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <!--                   <li>
+                    <a
+                      class="dropdown-item"
+                      href="#/Finance"
+                      data-bs-toggle="modal"
+                      data-bs-target="#passwordModal"
+                      (click)="isModalOpen = true"
+                      >Finance</a
+                    >
+                    </li> -->
+                <!--  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/Finance"
+                      data-bs-toggle="modal"
+                      data-bs-target="#passwordModal"
+                      (click)="isModalOpen = true"
+                      style="background-color: red; color: white"
+                      >Finance</a
+                    >
+                  </li> -->
+
+                  <!-- <li><a class="dropdown-item" href="#/Finance">Finance</a></li> -->
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/agriPilote"
+                      style="background-color: green"
+                      >Project Pilote</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <!-- <li>
+                    <a class="dropdown-item rainbow-item" href="#/pictureTable" style="background-color: rgb(128, 0, 53);"
+                      >Projet en images </a>
+                  </li> -->
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/pictureMp3"
+                      style="background-color: rgb(128, 0, 53)"
+                      >Projet en images</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/morgue"
+                      style="background-color: rgb(11, 19, 180)"
+                      >Morgue</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Documents
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/Fonctionnement"
+                      style="background-color: green"
+                      >Autorisation de Fonctionnement</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/Viabilite"
+                      style="background-color: blue"
+                      >Etat des lieux de viabilité</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/ROI"
+                      style="background-color: rgb(128, 0, 0)"
+                      >Règlement d'ordre intérieur</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/Intention"
+                      style="background-color: rgb(128, 107, 0)"
+                      >Déclaration d'intention</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/Notarie"
+                      style="background-color: red"
+                      >Acte-Notarie</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/Status"
+                      style="background-color: yellow"
+                      >Projet de Status</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/vueEnPlan"
+                      style="background-color: green"
+                      >Vue en plan coté de la morgue</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/FicheDeProject1"
+                      style="background-color: rgb(128, 41, 0)"
+                      >Fiche de project 1</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/PlanStrategique"
+                      >Plan strategique 2025–2029</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!--               <li class="nav-item">
+                <a class="nav-link" href="#/Messages">Messages</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#/Nécrologie">Nécrologie</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sport
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/Ciza"
+                      style="background-color: green"
+                      >Ciza 80</a
+                    >
+                  </li>
+
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/Cilu"
+                      style="background-color: blue"
+                      >Ciza 2</a
+                    >
+                  </li>
+                   <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                   <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/CiluAvecTshotsho"
+                      style="background-color: rgb(247, 14, 14)"
+                      >Ciza 3</a
+                    >
+                  </li>
+
+                 
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="loisirDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  World music
+                </a>
+
+                <ul class="dropdown-menu" style="z-index: 200">
+                  <li *ngFor="let worldmusic of worldMusicList; let i = index">
+                    <a
+                      class="dropdown-item rainbow-item"
+                      [routerLink]="worldmusic.link"
+                      [ngStyle]="{ 'background-color': getRainbowColor(i) }"
+                    >
+                      {{ worldmusic.name }}
+                    </a>
+                    <hr class="dropdown-divider" />
+                  </li>
+                </ul>
+              </li>
+
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  🎄<span style="color: red">🎄</span>Noël<span
+                    style="color: red"
+                    >🎄</span
+                  >🎄
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      [routerLink]="['/HolyNight', 'RsWUWzai8P8']"
+                    >
+                      O Holy Night</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      [routerLink]="['/Angels', 'yVjdGRp53_M']"
+                      >Angels We Have Heard On High</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      [routerLink]="['/SilentNight', 'wghk2Wkt28o']"
+                      >Silent Night</a
+                    >
+                  </li>
+
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      [routerLink]="['/FelizNavidad', '8eTA-AF4-bw']"
+                      >Feliz Navidad</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      [routerLink]="['/Noël', 'RH-xd5bPKTA']"
+                      >Do they know it is Christmas?</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      [routerLink]="['/LastChristmas', 'E8gmARGvPlI']"
+                      >Last Christmas</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      [routerLink]="['/USA', '9AjkUyX0rVw']"
+                      >USA for Africa</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      [routerLink]="['/SantaClause', 'HUlmzer_5TM']"
+                      >Santa Claus Is Coming</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      [routerLink]="['/CarelessWhisper', 'izGwDsrQ1eQ']"
+                      >Careless Whisper</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      [routerLink]="['/whenIseeYouAngain', '3R878g-SppU']"
+                      >When Will I See You Again</a
+                    >
+                  </li>
+                </ul>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="loisirDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Chants spirituels
+                </a>
+
+                <ul class="dropdown-menu" style="z-index: 200">
+                  <li
+                    *ngFor="
+                      let religiousMusic of religiousMusicList;
+                      let i = index
+                    "
+                  >
+                    <a
+                      class="dropdown-item rainbow-item"
+                      [routerLink]="religiousMusic.link"
+                      [ngStyle]="{ 'background-color': getRainbowColor(i) }"
+                    >
+                      {{ religiousMusic.name }}
+                    </a>
+                    <hr class="dropdown-divider" />
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="loisirDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                 Musique moderne congolaise
+                </a>
+
+                <ul class="dropdown-menu" style="z-index: 200">
+                  <li *ngFor="let music of congoMusicList; let i = index">
+                    <a
+                      class="dropdown-item rainbow-item"
+                      [routerLink]="music.link"
+                      [ngStyle]="{ 'background-color': getRainbowColor(i) }"
+                    >
+                      {{ music.name }}
+                    </a>
+                    <hr class="dropdown-divider" />
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <form class="d-flex mx-auto" role="search" (ngSubmit)="onSearch()">
+              <input
+                [(ngModel)]="searchQuery"
+                name="search"
+                class="form-control me-2"
+                type="search"
+                placeholder="Cherchez un nom"
+                aria-label="Search"
+                required
+              />
+              <button
+                class="btn btn-outline-success"
+                type="submit"
+                class="picture-card"
+                data-bs-toggle="modal"
+                data-bs-target="#searchModal"
+                (click)="onSearch()"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div>
+    <router-outlet (activate)="onChildActivate($event)"></router-outlet>
+  </div>
+
+  <!-- The Modal 1-->
+  <div class="modal fade" id="searchModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">{{ personName }}</h4>
+          <button
+            type="button"
+            class="btn-close"
+            (click)="CloseModel()"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container mt-5">
+            <div class="row align-items-center">
+              <!-- Picture Section -->
+              <div class="col-md-6">
+                <img
+                  [src]="modalPicture"
+                  alt="Sample Image"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <!-- Description Section -->
+              <div class="col-md-6">
+                <div>
+                  <h4 class="mb-3 mycontainer">À propos de moi</h4>
+                  <div style="text-align: center">
+                    <p>
+                      {{ message }}
+                    </p>
+                  </div>
+                </div>
+                <!-- <a href="#" class="btn btn-primary">Learn More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal 2-->
+  <div class="modal fade" id="passwordModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Entrez le mot de passe</h5>
+
+          <button
+            type="button"
+            class="btn-close"
+            (click)="ClosepassModel()"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <input
+            type="password"
+            class="form-control"
+            [(ngModel)]="password"
+            placeholder="Enter password"
+          />
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-primary"
+            (click)="checkPassword('/Finance')"
+            data-bs-dismiss="modal"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal 2 end-->
+
+  <div class="fixed-bottom" style="width: 95%; margin: auto">
+    <app-myfooter></app-myfooter>
+  </div>
+</div>

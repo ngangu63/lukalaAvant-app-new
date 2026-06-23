@@ -1,0 +1,20 @@
+<div class="table-container">
+  <!-- Navigation buttons -->
+  <div class="controls">
+    <button (click)="prev()">⬅ Previous</button>
+    <button (click)="next()">Next ➡</button>
+  </div>
+
+  <table class="image-table">
+    <tr *ngFor="let row of imageRows">
+      <td *ngFor="let img of row">
+        <img [src]="img" alt="" />
+      </td>
+    </tr>
+  </table>
+
+  <div class="controls">
+    <button (click)="prev()">⬅ Previous</button>
+    <button (click)="next()">Next ➡</button>
+  </div>
+</div>

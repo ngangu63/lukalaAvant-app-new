@@ -1,0 +1,16 @@
+<div class="mp3-player container text-center py-4" style="margin-top: 50px;">
+  <h3 class="mb-4">Hommage à nos morts </h3>
+  <h1 *ngIf="emoji" style="font-size: 100px;">{{emoji}}</h1>
+  <div class="btn-group" role="group" aria-label="MP3 Player Controls">
+    <button class="btn btn-primary" (click)="play()">
+      <i class="bi bi-play-fill"></i>
+      Jouer
+    </button>
+    <button class="btn btn-warning" (click)="pause()" [disabled]="!isPlaying">
+      <i class="bi bi-pause-fill"></i> Pause
+    </button>
+    <button class="btn btn-danger" (click)="stop()">
+      <i class="bi bi-stop-fill"></i> Arrêter
+    </button>
+  </div>
+</div>

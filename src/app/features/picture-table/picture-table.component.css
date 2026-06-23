@@ -1,0 +1,54 @@
+.table-container {
+  height: 90vh;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f0fff0; /* light green */
+  margin-bottom: 50px;
+}
+
+/* Table styling */
+.image-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Cells */
+.image-table td {
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  background-color: #ccffcc; /* green cells */
+}
+
+/* Images */
+.image-table img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.controls button {
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.controls button:hover {
+  background-color: red;
+  color: white;
+}

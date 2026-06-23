@@ -1,0 +1,37 @@
+.slider-container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.picture-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.picture-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.picture-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.info {
+  margin-top: 8px;
+}
+
+
+.mycontainer {
+  height: 250px; /* Set height for demonstration */
+  border: 1px solid transparent; 
+  padding-top: 0; /* No padding by default */
+  display: block; /* Default block behavior aligns text to the top */
+}

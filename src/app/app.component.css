@@ -1,0 +1,19 @@
+.rainbow-item {
+  color: #ffffff !important;
+  font-weight: 600;
+  
+  /* 🔥 makes white pop over ANY color */
+  text-shadow: 
+    0 1px 2px rgba(0,0,0,0.7),
+    0 0 4px rgba(0,0,0,0.5);
+}
+
+.rainbow-item2 {
+  color: #179d20 !important;
+  font-weight: 600;
+  
+  /* 🔥 makes white pop over ANY color */
+  text-shadow: 
+    0 1px 2px rgba(0,0,0,0.7),
+    0 0 4px rgba(0,0,0,0.5);
+}

@@ -1,0 +1,27 @@
+<div class="mp3-player container text-center py-4">
+
+   <h3 class="mb-4">🌹<span style="font-family: 'Courier New', monospace;">Lukala</span>🌹</h3> 
+
+    <!-- Video Player -->
+    <div *ngIf="isVideo" style="margin-top: 50px;">
+        <video id="video-player" width="100%"   controls>
+            <source [src]="fileSource" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Audio Player Controls -->
+    <div *ngIf="!isVideo">
+        <div class="btn-group" role="group" aria-label="Audio Controls">
+            <button class="btn btn-primary" (click)="play()">
+                <i class="bi bi-play-fill"></i> Play
+            </button>
+            <button class="btn btn-warning" (click)="pause()" [disabled]="!isPlaying">
+                <i class="bi bi-pause-fill"></i> Pause
+            </button>
+            <button class="btn btn-danger" (click)="stop()">
+                <i class="bi bi-stop-fill"></i> Stop
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,116 @@
+
+<div class="slider-container justify-content-center">
+  <div class="controls" style="margin-top: 5px; margin-bottom: 60px;">
+    <div class="picture-grid" style="width: 95%; margin-left: 1%; margin-right: 1%; height: 800px; overflow-y: auto;">
+      <div *ngFor="let picture of pictures" class="picture-card" data-bs-toggle="modal"
+        data-bs-target="#myModal" (click)="openPicture(picture)">
+        <img *ngIf="picture.imageUrl; else defaultImage" [src]="picture.imageUrl" alt="{{ picture.name }}"
+          style="width: 250px; height: 300px;" />
+        <ng-template #defaultImage>
+          <img [src]="picture.defaultImage" alt="{{ picture.name }}"
+            style="width: 250px; height: 300px; filter: blur(30px);" />
+        </ng-template>
+        <div class="info">
+          <h3 style="color: blue;">{{ picture.name }}</h3>
+          <p style="color: green">{{ picture.role }} 
+            <span style="color: rgb(255, 119, 0);"> {{ picture.location }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!-- <div class="slider-container">
+  <div class="controls" style="margin-top: 5px; margin-bottom: 60px;">
+
+
+
+    <button type="button" class="btn btn-primary btn-sm" (click)="previousSlide()"
+      style="margin-right: 5px; margin-bottom: 2px;" [disabled]="currentSlideIndex === 0">Précédent</button>
+
+
+    <button type="button" class="btn btn-primary btn-sm" (click)="nextSlide()"
+      style="margin-left: 5px; margin-bottom: 2px;"
+      [disabled]="(currentSlideIndex + 1) * (numberpicture)>= pictures.length">Suivant</button>
+
+
+    <div class="picture-grid" style="width: 95%; margin-left: 10%; margin-right: 10%;">
+      <div *ngFor="let picture of currentPictures; let i = index" class="picture-card" data-bs-toggle="modal" data-bs-target="#myModal" (click)="openPicture(currentPictures[i])">
+
+        <img *ngIf="picture.imageUrl; else defaultImage" [src]="picture.imageUrl" alt="{{ picture.name }}"
+          style=" width: 250px; height: 300px;" />
+
+        <ng-template #defaultImage>
+          <img [src]="picture.defaultImage" alt="{{ picture.name }}"
+            style=" width: 250px; height: 300px; filter: blur(30px);" />
+        </ng-template>
+
+
+        <div class="info">
+          <h3 style="color: blue;">{{ picture.name }}</h3>
+          <p style="color: green">{{ picture.role }} <span style="color: rgb(255, 119, 0) "> {{ picture.location }}
+            </span> </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div> -->
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">{{personName}}</h4>
+            <button type="button" class="btn-close" (click)="CloseModel()" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+    
+            <div class="container mt-5">
+              <div class="row align-items-center">
+                  <!-- Picture Section -->
+                  <div class="col-md-6">
+                      <img [src]="modalPicture" alt="Sample Image" class="img-fluid rounded">
+                  </div>
+                  <!-- Description Section -->
+                  <div class="col-md-6">
+                      <div>
+                        <h4 class="mb-3 mycontainer">À propos de moi</h4>
+                        <div style="text-align: center;">
+                          <p>
+                            {{message}}
+                          </p>
+  
+                        </div>
+                      </div>
+                      
+                       <!-- <a href="#" class="btn btn-primary">Learn More</a> --> 
+                  </div>
+              </div>
+            </div>
+          
+          
+          
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" (click)="CloseModel()"  data-bs-dismiss="modal">Close</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
