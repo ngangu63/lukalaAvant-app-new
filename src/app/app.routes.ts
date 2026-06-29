@@ -57,6 +57,7 @@ export const routes: Routes = [
   { path: 'PointFinal/:videoId', component: YoutubeComponent },
   { path: 'Coucou/:videoId', component: YoutubeComponent },
   { path: 'EbaleYaZaire/:videoId', component: YoutubeComponent },
+  { path: 'Parafifi/:videoId', component: YoutubeComponent },
   { path: 'Maya/:videoId', component: YoutubeComponent },
   { path: 'MayaVersion2/:videoId', component: YoutubeComponent },
   { path: 'Ngungi/:videoId', component: YoutubeComponent },

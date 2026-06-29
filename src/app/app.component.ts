@@ -156,7 +156,8 @@ export class AppComponent {
 
   congoMusicList = [
     
-    { name: 'MOSOLO - FAYA TESS', link: ['/FayaTMosolo','rhZOzxNSst4'] },
+    { name: 'MOSOLO - FAYA TESS', link: ['/FayaTMosolo','rhZOzxNSst4'] }, 
+    { name: 'Félicité parafifi- FAYA TESS', link: ['/Parafifi','AN6keFxEU-U'] },
     { name: 'ESWI YO WAPI - FAYA TESS', link: ['/FayaTessEswi','9kRwzBZChZo'] },
     { name: 'Rtc Riva - Madilu System', link: ['/RTCRIVA', 'owgNTJlBjNQ'] },
     { name: 'Hortense', link: ['/Hortense', 'VpvDSz8skb8'] },
