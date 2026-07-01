@@ -26,6 +26,7 @@ import { PictureTableComponent } from './features/picture-table/picture-table.co
 import { ImageMp4Component } from './features/image-mp4/image-mp4.component';
 import { Sport3Component } from './sport3/sport3.component';
 import { LukalaSamuseComponent } from './features/lukala-samuse/lukala-samuse.component';
+import { MediaPlayerComponent } from './features/media-player/media-player.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -187,6 +188,7 @@ export const routes: Routes = [
   { path: 'pictureTable', component: PictureTableComponent },
   { path: 'pictureMp3', component: ImageMp4Component },
   { path: 'lukakaSamuse', component: LukalaSamuseComponent },
+  { path: 'media/:id', component: MediaPlayerComponent },
   { path: 'agriPicture', component: CarouselComponent },
   { path: '**', component: HomeComponent },
 ];

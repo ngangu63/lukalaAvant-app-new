@@ -22,8 +22,6 @@ items: MediaItem[] = [
   
    {type: 'video', src: 'assets/mp3/DedeAniversaire2026.mp4', placeholder: 'assets/images/DedeAniversaire2026.jpg'},
   
-   
-  
     
    
   ];

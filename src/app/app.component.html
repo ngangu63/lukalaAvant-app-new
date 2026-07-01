@@ -561,23 +561,17 @@
                 >
                   Lukala s'amuse
                 </a>
-                <ul class="dropdown-menu">
-                  
-                  <!-- <li>
-                    <a class="dropdown-item rainbow-item" href="#/pictureTable" style="background-color: rgb(128, 0, 53);"
-                      >Projet en images </a>
-                  </li> -->
-                  <li>
+                <ul class="dropdown-menu" style="z-index: 200">
+                  <li *ngFor="let media of lukalaMediaList; let i = index">
                     <a
                       class="dropdown-item rainbow-item"
-                      href="#/lukakaSamuse"
-                      style="background-color: rgb(128, 0, 53)"
-                      >L'Anniversaire de DéDé</a
+                      [routerLink]="media.link"
+                      [ngStyle]="{ 'background-color': getRainbowColor(i) }"
                     >
+                      {{ media.name }}
+                    </a>
+                    <hr class="dropdown-divider" />
                   </li>
-            
-                  
-                  
                 </ul>
               </li>
 

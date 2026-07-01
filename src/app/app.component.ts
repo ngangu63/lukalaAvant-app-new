@@ -8,7 +8,8 @@ import { LesDirigeantsComponent } from './les-dirigeants/les-dirigeants.componen
 import { BigPicture } from './big-picture';
 import { BigPictureService } from './big-picture.service';
 import { FormsModule } from '@angular/forms';
-import { Observable, of } from 'rxjs';
+import { lukalaMediaList } from './features/media-player/lukala-media';
+import { MediaFile } from './features/media-player/media-file';
 
 @Component({
   selector: 'app-root',
@@ -25,6 +26,9 @@ import { Observable, of } from 'rxjs';
 })
 export class AppComponent {
   title = 'myDropDown-app';
+
+  /** Media items shown in the "Lukala s'amuse" dropdown. */
+  lukalaMediaList: MediaFile[] = lukalaMediaList;
   isSearchEnabled: boolean = true;
   searchQuery: string = '';
   searchResults: BigPicture[] = [];
