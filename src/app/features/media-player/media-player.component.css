@@ -14,14 +14,16 @@ audio.w-100 {
   margin-top: 0.5rem;
 }
 
-/* Video stage: fills the viewport below the header/navigation,
-   without overlaying them. */
+/* Video stage: fills the viewport space left below the jumbotron
+   banner (~200px) + navbar, while leaving room for the fixed footer,
+   so none of them are hidden. */
 .video-stage {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 300px);
+  min-height: 240px;
   background-color: #e3f2fd;
 }
 
