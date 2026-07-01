@@ -25,6 +25,7 @@ import { CarouselComponent } from './features/carousel/carousel.component';
 import { PictureTableComponent } from './features/picture-table/picture-table.component';
 import { ImageMp4Component } from './features/image-mp4/image-mp4.component';
 import { Sport3Component } from './sport3/sport3.component';
+import { LukalaSamuseComponent } from './features/lukala-samuse/lukala-samuse.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -185,6 +186,7 @@ export const routes: Routes = [
   { path: 'agriPilote', component: AgriPiloteComponent },
   { path: 'pictureTable', component: PictureTableComponent },
   { path: 'pictureMp3', component: ImageMp4Component },
+  { path: 'lukakaSamuse', component: LukalaSamuseComponent },
   { path: 'agriPicture', component: CarouselComponent },
   { path: '**', component: HomeComponent },
 ];

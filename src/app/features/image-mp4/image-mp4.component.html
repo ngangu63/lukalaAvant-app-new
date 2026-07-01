@@ -10,14 +10,14 @@
       <td *ngFor="let item of row; let colIndex = index">
         <div class="media-wrapper">
           <!-- IMAGE -->
-          <img *ngIf="item.type === 'image'" [src]="item.src" />
+          <img *ngIf="item.type === 'image'" alt [src]="item.src" />
 
           <!-- VIDEO / AUDIO -->
           <ng-container *ngIf="item.type !== 'image'">
             <!-- Placeholder -->
             <img
               *ngIf="playingIndex !== rowIndex * 2 + colIndex"
-              [src]="item.placeholder"
+              [src]="item.placeholder" alt=""
               class="clickable"
               (click)="playMedia(rowIndex * 2 + colIndex)"
             />

@@ -11,7 +11,7 @@
       <div
         class="p-5 text-center bg-image w-100 h-100 rounded-3"
         style="
-          background-image: url(&quot;assets/images/CantineVersion2.jpg&quot;);
+          background-image: url('assets/images/CantineVersion2.jpg');
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
@@ -301,9 +301,9 @@
               <!--               <li class="nav-item">
                 <a class="nav-link" href="#/Messages">Messages</a>
               </li> -->
-              <li class="nav-item">
+<!--               <li class="nav-item">
                 <a class="nav-link" href="#/Nécrologie">Nécrologie</a>
-              </li>
+              </li> -->
 
               <li class="nav-item dropdown">
                 <a
@@ -353,8 +353,7 @@
               </li>
 
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
+                <a class="nav-link dropdown-toggle"
                   href="#"
                   id="loisirDropdown"
                   role="button"
@@ -551,6 +550,39 @@
                   </li>
                 </ul>
               </li>
+              
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Lukala s'amuse
+                </a>
+                <ul class="dropdown-menu">
+                  
+                  <!-- <li>
+                    <a class="dropdown-item rainbow-item" href="#/pictureTable" style="background-color: rgb(128, 0, 53);"
+                      >Projet en images </a>
+                  </li> -->
+                  <li>
+                    <a
+                      class="dropdown-item rainbow-item"
+                      href="#/lukakaSamuse"
+                      style="background-color: rgb(128, 0, 53)"
+                      >L'Anniversaire de DéDé</a
+                    >
+                  </li>
+            
+                  
+                  
+                </ul>
+              </li>
+
+
+
             </ul>
 
             <form class="d-flex mx-auto" role="search" (ngSubmit)="onSearch()">

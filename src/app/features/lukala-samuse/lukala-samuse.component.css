@@ -1,0 +1,80 @@
+.table-container {
+  height: 90vh;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f0fff0;
+  margin-bottom: 50px;
+}
+
+/* Table */
+.image-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* Cells */
+.image-table td {
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  background-color: #ccffcc;
+  vertical-align: top; /* 🔥 allows natural height */
+}
+
+/* Media wrapper */
+.media-wrapper {
+  width: 100%;
+}
+
+/* Images keep natural ratio */
+.image-table img {
+  width: 100%;
+  height: auto; /* 🔥 key change */
+  border-radius: 10px;
+}
+
+/* Video styling */
+.image-table video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Audio styling */
+.image-table audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Clickable placeholder */
+.clickable {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.clickable:hover {
+  transform: scale(1.02);
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.controls button {
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.controls button:hover {
+  background-color: red;
+  color: white;
+}
