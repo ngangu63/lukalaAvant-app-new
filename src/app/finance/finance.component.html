@@ -1,52 +1,121 @@
-<!-- excel-reader.component.html -->
-<div style="margin-top: 15px;
-  margin-bottom: 55px;">
-  <div class="container mt-5" *ngIf="excelData.length > 0">
-    <div class="table-responsive" style="max-height: 1000px; overflow-y: auto;">
-      <table class="table table-bordered table-hover caption-top">
-        <caption class="fs-2">Contribution des membres</caption>
-        <thead class="table-light">
-          <tr>
-            <!-- <th *ngFor="let header of excelData[0]">{{ header }}</th> -->
-            <th *ngFor="let header of excelData[0]" [innerHTML]="formatHeader(header, 25)"></th>
-          </tr>
-        </thead>
-        <tbody>
+<!-- finance.component.html -->
+<div style="margin-top: 15px; margin-bottom: 55px;">
 
-          <tr *ngFor="let row of excelData.slice(1); let i = index"
-            [ngClass]="{'table-primary': i % 2 === 0, 'table-secondary': i % 2 !== 0}">
+  <!-- ================= LOGIN FORM (shown when not authenticated) ================= -->
+  <div class="container mt-5" *ngIf="!isAuthenticated" style="max-width: 420px;">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h4 class="card-title text-center mb-3" style="color: rgb(154, 19, 86);">
+          Accès réservé — Finance
+        </h4>
+        <p class="text-center text-muted" style="font-size: 0.9rem;">
+          Veuillez vous authentifier pour consulter les données financières.
+        </p>
 
-            <td *ngFor="let cell of row; let j = index">
-              <span *ngIf="j<= 2 && row[0]===null" style="font-size: 0;">{{ cell }}</span>
-              <span *ngIf="j<= 2 && row[0]!==null" style="text-align: center;">{{ cell }}</span>
-              <span *ngIf="j>= 2 && row[0]===null" style="font-size: 0;">{{ cell }}</span>
-              <span *ngIf="j>2 && row[1]==='$'" [style.color]="getColor(cell)">{{ cell |
-                currency:'USD':'symbol':'1.2-2'}}</span>
-              <span *ngIf="j>2 && row[1]==='€'" [style.color]="getColor(cell)">{{ cell |
-                currency:'EUR':'symbol':'1.2-2'}}</span>
+        <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+          <div class="mb-3">
+            <label for="userId" class="form-label">Identifiant</label>
+            <input
+              id="userId"
+              name="userId"
+              type="text"
+              class="form-control"
+              [(ngModel)]="userId"
+              required
+              autocomplete="username"
+            />
+          </div>
 
-              <span *ngIf="j>2 && row[0]==='TOTAL (Dollar)'" style="font-weight: bold;">{{ cell |
-                currency:'USD':'symbol':'1.2-2'}}</span>
-              <span *ngIf="j>2 && row[0]==='TOTAL (Euro)'" style="font-weight: bold;">{{ cell |
-                currency:'EUR':'symbol':'1.2-2'}}</span>
+          <div class="mb-3">
+            <label for="password" class="form-label">Mot de passe</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              class="form-control"
+              [(ngModel)]="password"
+              required
+              autocomplete="current-password"
+            />
+          </div>
 
-            </td>
-          </tr>
+          <div class="alert alert-danger py-2" role="alert" *ngIf="loginError">
+            {{ loginError }}
+          </div>
 
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="container mt-5" *ngIf="excelData.length === 0">
-    <div class="alert alert-warning" role="alert">
-      <div class="spinner-border text-warning me-2" role="status">
-        <span class="visually-hidden">Loading...</span>
+          <button
+            type="submit"
+            class="btn w-100"
+            style="background-color: rgb(154, 19, 86); color: white;"
+            [disabled]="loginForm.invalid"
+          >
+            Se connecter
+          </button>
+        </form>
       </div>
-      Loading Excel data...
     </div>
   </div>
 
+  <!-- ================= AUTHENTICATED VIEW ================= -->
+  <ng-container *ngIf="isAuthenticated">
 
+    <!-- Toolbar: download + logout -->
+    <div class="container mt-4 d-flex justify-content-end gap-2">
+      <button type="button" class="btn btn-success" (click)="downloadExcelFile()">
+        Télécharger le fichier Excel
+      </button>
+      <button type="button" class="btn btn-outline-secondary" (click)="logout()">
+        Se déconnecter
+      </button>
+    </div>
 
+    <!-- Data table -->
+    <div class="container mt-3" *ngIf="excelData.length > 0">
+      <div class="table-responsive" style="max-height: 1000px; overflow-y: auto;">
+        <table class="table table-bordered table-hover caption-top">
+          <caption class="fs-2">Contribution des membres</caption>
+          <thead class="table-light">
+            <tr>
+              <th *ngFor="let header of excelData[0]" [innerHTML]="formatHeader(header, 25)"></th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr *ngFor="let row of excelData.slice(1); let i = index"
+              [ngClass]="{'table-primary': i % 2 === 0, 'table-secondary': i % 2 !== 0}">
+
+              <td *ngFor="let cell of row; let j = index">
+                <span *ngIf="j<= 2 && row[0]===null" style="font-size: 0;">{{ cell }}</span>
+                <span *ngIf="j<= 2 && row[0]!==null" style="text-align: center;">{{ cell }}</span>
+                <span *ngIf="j>= 2 && row[0]===null" style="font-size: 0;">{{ cell }}</span>
+                <span *ngIf="j>2 && row[1]==='$'" [style.color]="getColor(cell)">{{ cell |
+                  currency:'USD':'symbol':'1.2-2'}}</span>
+                <span *ngIf="j>2 && row[1]==='€'" [style.color]="getColor(cell)">{{ cell |
+                  currency:'EUR':'symbol':'1.2-2'}}</span>
+
+                <span *ngIf="j>2 && row[0]==='TOTAL (Dollar)'" style="font-weight: bold;">{{ cell |
+                  currency:'USD':'symbol':'1.2-2'}}</span>
+                <span *ngIf="j>2 && row[0]==='TOTAL (Euro)'" style="font-weight: bold;">{{ cell |
+                  currency:'EUR':'symbol':'1.2-2'}}</span>
+
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Loading state -->
+    <div class="container mt-3" *ngIf="excelData.length === 0">
+      <div class="alert alert-warning" role="alert">
+        <div class="spinner-border text-warning me-2" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        Loading Excel data...
+      </div>
+    </div>
+
+  </ng-container>
 
 </div>

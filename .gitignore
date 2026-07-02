@@ -29,7 +29,7 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-/.angular/cache
+/.angular
 .sass-cache/
 /connect.lock
 /coverage
@@ -37,11 +37,12 @@ yarn-error.log
 testem.log
 /typings
 
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
 # System files
 .DS_Store
 Thumbs.db
-node_modules/
-dist/
-
-.angular/
-coverage/
