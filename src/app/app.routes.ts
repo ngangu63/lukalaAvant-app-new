@@ -111,6 +111,7 @@ export const routes: Routes = [
   { path: 'Kelhiambiliabel/:videoId', component: YoutubeComponent }, 
   { path: 'Nzambemokonzi/:videoId', component: YoutubeComponent },
   { path: 'OnMyOwnft/:videoId', component: YoutubeComponent },
+  { path: 'AdiosTete/:videoId', component: YoutubeComponent },
   { path: 'ForeverYoung/:videoId', component: YoutubeComponent },
   { path: 'BabyComeToMe/:videoId', component: YoutubeComponent },
   { path: 'LoveWillFollow/:videoId', component: YoutubeComponent },
