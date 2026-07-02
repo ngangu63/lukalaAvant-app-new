@@ -162,7 +162,7 @@ export class AppComponent {
   ];
 
   congoMusicList = [
-    
+    { name: 'Africa mokili mobimba  - FAYA TESS', link: ['/AfricaMokili','MXcCK8A8LQo'] }, 
     { name: 'MOSOLO - FAYA TESS', link: ['/FayaTMosolo','rhZOzxNSst4'] }, 
     { name: 'Félicité parafifi- FAYA TESS', link: ['/Parafifi','AN6keFxEU-U'] },
     { name: 'ESWI YO WAPI - FAYA TESS', link: ['/FayaTessEswi','9kRwzBZChZo'] },
