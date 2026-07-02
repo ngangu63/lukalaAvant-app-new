@@ -109,9 +109,8 @@ export class AppComponent {
 
     { name: 'John Denver - Take Me Home, Country Roads', link: ['/TakeMeHome', '1vrEljMfXYo'] }, 
     { name: 'Brian  Simpson Barcelona', link: ['/Barcelona', 'fToQyqufe3w'] }, 
-    { name: ' Benny Rivers – Step by Step In Time', link: ['/StepByStep', 'lRGG1dqWotU'] },  
-    { name: 'Brian Simpson  – Brcelona', link: ['/Barcelona', 'fToQyqufe3w'] }, 
-    { name: ' Whitney Houston - I Will Always Love You', link: ['/AlwaysLoveYou', '3JWTaaS7LdU'] },  
+    { name: 'Benny Rivers – Step by Step In Time', link: ['/StepByStep', 'lRGG1dqWotU'] },  
+    { name: 'Whitney Houston - I Will Always Love You', link: ['/AlwaysLoveYou', '3JWTaaS7LdU'] },  
     { name: 'Phil Collins - Do You Remember?', link: ['/doyouremember', 'NTvR7HySgHo'] }, 
     { name: 'Elton John - Sacrifice', link: ['/sacrifice', 'NrLkTZrPZA4'] },  
     { name: 'Michael Jackson - Human Nature', link: ['/humanNature', 'ElN_4vUvTPs'] },

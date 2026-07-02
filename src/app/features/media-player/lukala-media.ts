@@ -13,12 +13,21 @@ export const lukalaMediaList: MediaFile[] = [
     placeholder: 'assets/images/DedeAniversaire2026.jpg',
   },
   {
+    name: 'Réunion bana ba Lukala 2026',
+    link: ['/media', 'ReunionBanaBaLukala'],
+    source: 'assets/mp3/SamyKedo.mp4',
+    type: 'mp4',
+    placeholder: 'assets/images/membres/SamyKedo.jpeg',
+  },
+
+  {
     name: 'Hommage à nos morts',
     link: ['/media', 'hommage'],
     source: 'assets/mp3/HOMMAGE_A_NOS_MORTS.mp3',
     type: 'mp3',
     placeholder: 'assets/images/CantineModified1.jpg',
   },
+
   {
     name: 'Lukala en vidéo',
     link: ['/media', 'lukala-video'],
