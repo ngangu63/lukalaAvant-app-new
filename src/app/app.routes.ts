@@ -76,6 +76,7 @@ export const routes: Routes = [
   { path: 'PrendSoinDelle/:videoId', component: YoutubeComponent },
   { path: 'Fideles/:videoId', component: YoutubeComponent },
   { path: 'Shiver/:videoId', component: YoutubeComponent }, 
+  { path: 'TakeMeHome/:videoId', component: YoutubeComponent },
   { path: 'sacrifice/:videoId', component: YoutubeComponent }, 
   { path: 'humanNature/:videoId', component: YoutubeComponent }, 
   { path: 'doyouremember/:videoId', component: YoutubeComponent },
