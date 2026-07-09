@@ -173,6 +173,7 @@ export class AppComponent {
     { name: 'Adios Tete - Faya Tess', link: ['/AdiosTete', 'hwYMYYG5MlY'] },
     { name: 'Maze - Rochereau Tabu Ley', link: ['/Maze', 'xUaMEARE-2E'] },
     { name: 'Beyanga - Mbilia Bel', link: ['/Beyanga', 'ZhXnj3EACXA'] },
+    { name: 'Matata ya Mwasi na mobali  - FAYA TESS', link: ['/MatataYaMuasi','1T1zz_2ZhTE'] },
     { name: 'Molunge Ya Mbanda', link: ['/MolungeYaMbanda', '53ck5zij__o'] }, 
     { name: 'Laurent fantome', link: ['/FayaLaurentFantome', 'yHy3NBmep14'] },
     { name: 'Bon Samaritain - Papa Noel', link: ['/BonSamaritain', '8bMc6-VWvMM'],},
