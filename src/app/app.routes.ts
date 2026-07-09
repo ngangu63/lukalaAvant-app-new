@@ -177,6 +177,7 @@ export const routes: Routes = [
    {path: 'parafifi/:videoId', component: YoutubeComponent }, 
   { path: 'Messages', component: MessagesComponent },
   { path: 'MatataYaMuasi/:videoId', component: YoutubeComponent },
+  { path: 'Sisika/:videoId', component: YoutubeComponent },
   { path: 'ROI', component: ROIComponent },
   { path: 'Status', component: StatusComponent },
   { path: 'Intention', component: DeclIntentionComponent },

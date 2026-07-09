@@ -221,7 +221,8 @@ export class AppComponent {
     { name: 'Ebale ya Congo', link: ['/EbaleYaCcongo', 'vhoVG_KjEEQ'] }, 
     { name: 'Ambiance katho', link: ['/AmbianceKatho', 'epknnlEHi8U'] }, 
     { name: 'Félicité parafifi', link: ['/parafifi', 'AN6keFxEU-U'] }, 
-    { name: 'MBROUSS - Zaïko Langa Langa', link: ['/mbrouss', 'pN3s5Ru4QVc'] }, 
+    { name: 'MBROUSS - Zaïko Langa Langa', link: ['/mbrouss', 'pN3s5Ru4QVc'] },
+    { name: 'Boh! - Zaïko Langa Langa', link: ['/Sisika','6ACaRrzeGeA'] }, 
     { name: 'Papa na Roissy - Koffi Olomide ', link: ['/papaNaRoissy', 'eJlOM5EyNys'] }, 
     { name: 'Riana- Choc Stars', link: ['/riana', 'c5qhEd9T1x4'] }, 
 
