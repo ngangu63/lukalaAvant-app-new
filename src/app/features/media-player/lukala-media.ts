@@ -19,7 +19,20 @@ export const lukalaMediaList: MediaFile[] = [
     type: 'mp4',
     placeholder: 'assets/images/membres/SamyKedo.jpeg',
   },
-
+  {
+    name: 'Lukala en vidéo',
+    link: ['/media', 'lukala-video'],
+    source: 'assets/mp3/LukalaVideo.mp4',
+    type: 'mp4',
+    placeholder: 'assets/plantation/bilanga12.jpg',
+  },
+  {
+    name: 'Camp Cilu 1 en voiture',
+    link: ['/media', 'maison-lukala-bycar'],
+    source: 'assets/mp3/MamaisonLukalaBycar.mp4',
+    type: 'mp4',
+    placeholder: 'assets/images/RemyMaison.jpg',
+  },
   {
     name: 'Hommage à nos morts',
     link: ['/media', 'hommage'],
@@ -28,13 +41,6 @@ export const lukalaMediaList: MediaFile[] = [
     placeholder: 'assets/images/CantineModified1.jpg',
   },
 
-  {
-    name: 'Lukala en vidéo',
-    link: ['/media', 'lukala-video'],
-    source: 'assets/mp3/LukalaVideo.mp4',
-    type: 'mp4',
-    placeholder: 'assets/plantation/bilanga12.jpg',
-  },
   {
     name: 'Bilanga 11',
     link: ['/media', 'bilanga11'],

@@ -244,9 +244,6 @@ export class AppComponent {
     { name: "Nalaki yo - Moise Matuta", link: ['/NalakiYo', 'eSX56P5hbH0'] },  
     { name: "Biso ba oyo- Moise Matuta", link: ['/BisoBaOyo', 'ery0dpkVK80'] },  
     
-
-
-
   ]
 
 
