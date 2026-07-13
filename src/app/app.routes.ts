@@ -160,6 +160,7 @@ export const routes: Routes = [
   { path: 'Orgasy/:videoId', component: YoutubeComponent },
   { path: 'NotYoungAnymore/:videoId', component: YoutubeComponent }, 
   { path: 'TomorrowAINTPromised/:videoId', component: YoutubeComponent }, 
+  { path: 'NormeJeanGoubald/:videoId', component: YoutubeComponent }, 
   { path: 'StillFallingInLove/:videoId', component: YoutubeComponent }, 
   { path: 'Koukoulou/:videoId', component: YoutubeComponent }, 
   { path: 'Ikea/:videoId', component: YoutubeComponent },

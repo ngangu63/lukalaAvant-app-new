@@ -184,6 +184,7 @@ export class AppComponent {
     { name: 'Tangawisi', link: ['/Tangawisi', 'Td34YSYubvA'] },
     { name: 'Prolongation - Karmapa', link: ['/Prolongation', 'k3_odBeWt44'] },
     { name: 'Ndaya paradis', link: ['/NdayaParadis', '-FcW4Wexciw'] },
+    { name: 'jean goubald Feat Lokua kanza dans Eve "Norme"', link: ['/NormeJeanGoubald', 'wlx4OutsSzM'] },
     { name: 'Nzele - Madilu System', link: ['/NzeleMadilu', 'FGkEAN9lMzA'] },
     { name: 'Centieme Dossier - Fally Ipupa', link: ['/CentièmeDossier', 'gIfxaiLOjPQ'],},
     { name: 'Nzambe mokonzi- Bela Bela', link: ['/Nzambemokonzi', 'CXDRyznygQA'],},
