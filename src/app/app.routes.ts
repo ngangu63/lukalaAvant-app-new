@@ -168,7 +168,7 @@ export const routes: Routes = [
   { path: 'NobodyChecksOn/:videoId', component: YoutubeComponent },
   { path: 'NotAsYoung/:videoId', component: YoutubeComponent },
   { path: 'OneLastLookBack/:videoId', component: YoutubeComponent },
-  { path: 'AnotherYearGone:videoId', component: YoutubeComponent },
+  { path: 'AnotherYearGone/:videoId', component: YoutubeComponent },
   { path: 'OurFavoriteSong/:videoId', component: YoutubeComponent },
   { path: 'AgeIsNoShame/:videoId', component: YoutubeComponent },
 
