@@ -124,6 +124,7 @@ export class AppComponent {
     { name: 'Soul Blues Music  - ANOTHER YEAR GONE', link: ['/AnotherYearGone', 'Cv_4EDGZeL4'] }, 
     { name: 'Earl Duston - Our Favorite Song', link: ['/OurFavoriteSong', 'VhlvTmc0vO8']}, 
     { name: 'Soul Blues Music  - AGE IS NO SHAME', link: ['/AgeIsNoShame', '4RNdo1pWVy0'] }, 
+    { name: 'Etta Sale -   I chose myself', link:['/IchoseMyself' , 'f9l8kBwvRtA']},
 
     { name: "Still Falling In Love With You - Eddie Dalton ft. Morgan Luna", link: ['/StillFallingInLove', 'X7Mq2mpOxEU'],},
     { name: 'Whitney Houston - I Will Always Love You', link: ['/AlwaysLoveYou', '3JWTaaS7LdU'] },  
