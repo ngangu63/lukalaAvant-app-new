@@ -107,8 +107,7 @@ export class AppComponent {
   worldMusicList = [  
 
 
-    { name: 'John Denver - Take Me Home, Country Roads', link: ['/TakeMeHome', '1vrEljMfXYo'] }, 
-    { name: 'Brian  Simpson Barcelona', link: ['/Barcelona', 'fToQyqufe3w'] }, 
+
     { name: 'Benny Rivers – Step by Step In Time', link: ['/StepByStep', 'lRGG1dqWotU'] },  
     { name: 'Benny Rivers – I Won"t Fall Again', link: ['/FallAgain', '8KrLFLdlAqA'] },  
     { name: "Morgan Rita – I've Found A Love ", link: ['/IveFoundALove', 'LzlsqkEmqlM'] }, 
@@ -133,6 +132,8 @@ export class AppComponent {
     { name: 'Whitney Houston - I Will Always Love You', link: ['/AlwaysLoveYou', '3JWTaaS7LdU'] },  
     { name: 'Phil Collins - Do You Remember?', link: ['/doyouremember', 'NTvR7HySgHo'] }, 
     { name: 'Elton John - Sacrifice', link: ['/sacrifice', 'NrLkTZrPZA4'] },  
+    { name: 'John Denver - Take Me Home, Country Roads', link: ['/TakeMeHome', '1vrEljMfXYo'] }, 
+    { name: 'Brian  Simpson Barcelona', link: ['/Barcelona', 'fToQyqufe3w'] }, 
     { name: 'Michael Jackson - Human Nature', link: ['/humanNature', 'ElN_4vUvTPs'] },
     { name: "Christopher Cross - Sailing", link: ['/Salling', '9PnXcP8ZI7M'],},
     { name: "Maxwell - Ascension (Don't Ever Wonder)", link: ['/DontEverWonder', 'D7rm9t5S4uE']},
