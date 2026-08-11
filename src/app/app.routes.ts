@@ -159,10 +159,13 @@ export const routes: Routes = [
   { path: 'mbrouss/:videoId', component: YoutubeComponent },
   { path: 'Orgasy/:videoId', component: YoutubeComponent },
   { path: 'IveFoundALove/:videoId', component: YoutubeComponent },
-
+  { path: 'FeelingGoodToday/:videoId', component: YoutubeComponent },
+  { path: 'WhenAManLOVES/:videoId', component: YoutubeComponent },
+  { path: 'IwasYoungToo/:videoId', component: YoutubeComponent },
   { path: 'whereDidTheYear/:videoId', component: YoutubeComponent },
   { path: 'TooHoldToPretend/:videoId', component: YoutubeComponent },
   { path: 'HoldMeInYOUR/:videoId', component: YoutubeComponent },
+  { path: 'IWhereIsThatMan/:videoId', component: YoutubeComponent },
   { path: 'DontLetMeDown/:videoId', component: YoutubeComponent },
   { path: 'RoughNights/:videoId', component: YoutubeComponent },
   { path: 'NobodyChecksOn/:videoId', component: YoutubeComponent },
@@ -172,7 +175,7 @@ export const routes: Routes = [
   { path: 'OurFavoriteSong/:videoId', component: YoutubeComponent },
   { path: 'AgeIsNoShame/:videoId', component: YoutubeComponent },
   { path: 'IchoseMyself/:videoId', component: YoutubeComponent },
-
+  { path: 'FearInTheAir/:videoId', component: YoutubeComponent },
 
   { path: 'TomorrowAINTPromised/:videoId', component: YoutubeComponent },
   { path: 'NormeJeanGoubald/:videoId', component: YoutubeComponent },
