@@ -176,7 +176,8 @@ export const routes: Routes = [
   { path: 'AgeIsNoShame/:videoId', component: YoutubeComponent },
   { path: 'IchoseMyself/:videoId', component: YoutubeComponent },
   { path: 'FearInTheAir/:videoId', component: YoutubeComponent },
-
+  { path: 'BuiltToLast/:videoId', component: YoutubeComponent },
+  { path: 'TakeALittle/:videoId', component: YoutubeComponent },
   { path: 'TomorrowAINTPromised/:videoId', component: YoutubeComponent },
   { path: 'NormeJeanGoubald/:videoId', component: YoutubeComponent },
   { path: 'StillFallingInLove/:videoId', component: YoutubeComponent },
