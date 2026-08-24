@@ -166,6 +166,7 @@ export const routes: Routes = [
   { path: 'TooHoldToPretend/:videoId', component: YoutubeComponent },
   { path: 'HoldMeInYOUR/:videoId', component: YoutubeComponent },
   { path: 'IWhereIsThatMan/:videoId', component: YoutubeComponent },
+  { path: 'OneStepAtATime/:videoId', component: YoutubeComponent },
   { path: 'DontLetMeDown/:videoId', component: YoutubeComponent },
   { path: 'RoughNights/:videoId', component: YoutubeComponent },
   { path: 'NobodyChecksOn/:videoId', component: YoutubeComponent },

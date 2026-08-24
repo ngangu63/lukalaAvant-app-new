@@ -122,6 +122,7 @@ export class AppComponent {
     { name: 'Benny Rivers  - Rough Nights', link: ['/RoughNights', '5uA8z3VgGeI'] }, 
     { name: 'Eddie Dalton.  - Nobody Checks on the Strong Man', link: ['/NobodyChecksOn', 'v9gZgZzG1Uw'] }, 
     { name: 'Soul Blues Music  - NOT AS YOUNG', link: ['/NotAsYoung', 'V8pSLGGzzgU'] }, 
+    { name: 'Jaxson Blue - One Step at a Time', link: ['/OneStepAtATime', '0InO6l6WIjs'] }, 
     { name: 'JOHN DAVIS  - I was young once too', link: ['/IwasYoungToo', 'P3i4xsTd-lA'] }, 
     { name: 'Benny Rivers  - One Last Look Back', link: ['/OneLastLookBack', '_i_GzxRm1aI'] }, 
     { name: 'Soul Blues Music  - ANOTHER YEAR GONE', link: ['/AnotherYearGone', 'Cv_4EDGZeL4'] }, 
