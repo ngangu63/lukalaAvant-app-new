@@ -187,12 +187,13 @@ export class AppComponent {
   congoMusicList = [
     
     { name: 'Koukoulou - Koffi', link: ['/Koukoulou', 'j8gCb6bKC44'] },
+    { name: 'Hortense', link: ['/Hortense', 'VpvDSz8skb8'] },
+    { name: 'jean goubald Feat Lokua kanza dans Eve "Norme"', link: ['/NormeJeanGoubald', 'wlx4OutsSzM'] },
     { name: 'Africa mokili mobimba  - FAYA TESS', link: ['/AfricaMokili','MXcCK8A8LQo'] }, 
+    { name: 'Ikea - Koffi', link: ['/Ikea', 'HxDdpBMWI3Q'] },  
     { name: 'MOSOLO - FAYA TESS', link: ['/FayaTMosolo','rhZOzxNSst4'] }, 
     { name: 'ESWI YO WAPI - FAYA TESS', link: ['/FayaTessEswi','9kRwzBZChZo'] },
     { name: 'Rtc Riva - Madilu System', link: ['/RTCRIVA', 'owgNTJlBjNQ'] },
-    { name: 'Hortense', link: ['/Hortense', 'VpvDSz8skb8'] },
-    
     { name: 'Kelhia - Mbilia Bel', link: ['/Kelhiambiliabel', '0SpzfQnFC4Q'] },
     { name: 'Eswi yo wapi - Mbilia Bel', link: ['/Eswiyowapi', 'gcrkm2HFV-o'] },
     { name: 'Adios Tete - Faya Tess', link: ['/AdiosTete', 'hwYMYYG5MlY'] },
@@ -206,7 +207,7 @@ export class AppComponent {
     { name: 'Tangawisi', link: ['/Tangawisi', 'Td34YSYubvA'] },
     { name: 'Prolongation - Karmapa', link: ['/Prolongation', 'k3_odBeWt44'] },
     { name: 'Ndaya paradis', link: ['/NdayaParadis', '-FcW4Wexciw'] },
-    { name: 'jean goubald Feat Lokua kanza dans Eve "Norme"', link: ['/NormeJeanGoubald', 'wlx4OutsSzM'] },
+
     { name: 'Nzele - Madilu System', link: ['/NzeleMadilu', 'FGkEAN9lMzA'] },
     { name: 'Centieme Dossier - Fally Ipupa', link: ['/CentièmeDossier', 'gIfxaiLOjPQ'],},
     { name: 'Nzambe mokonzi- Bela Bela', link: ['/Nzambemokonzi', 'CXDRyznygQA'],},
@@ -242,7 +243,7 @@ export class AppComponent {
     { name: 'Ebale Ya Zaire - Simaro', link: ['/EbaleYaZaire', '6zh721l_6gI'] },
     { name: 'Jamais Kolonga', link: ['/JamaisKolonga', 'Hhue5hh_IOM'] },
     { name: 'Maya Version2 - Simaro', link: ['/MayaVersion2', '1oPDUjb7j-o'] },
-    { name: 'Ikea - Koffi', link: ['/Ikea', 'HxDdpBMWI3Q'] },    
+      
     { name: 'Ayindjo - Nyboma', link: ['/Ayindjo', 'DMDSnkW5tfE'] },  
     { name: 'Ebale ya Congo', link: ['/EbaleYaCcongo', 'vhoVG_KjEEQ'] }, 
     { name: 'Ambiance katho', link: ['/AmbianceKatho', 'epknnlEHi8U'] }, 
