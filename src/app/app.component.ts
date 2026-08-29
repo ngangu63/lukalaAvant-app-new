@@ -217,6 +217,7 @@ export class AppComponent {
     { name: 'Point Final', link: ['/PointFinal', 'ulznRM_QQPc'] },
     { name: 'Nzoto Na Nga Se Moko', link: ['/NzotoMoko', 'Po0U1sF45S0'] },
     { name: 'Maya - Simaro', link: ['/Maya', 'e9cKkBGleGE'] },
+    { name: 'Maya (2nd Version) - Simaro', link: ['/MayaVersion2', '1oPDUjb7j-o'] },
     { name: 'Zéro faute - Koffi', link: ['/ZéroFaute', 'sDCoVhUilys'] },
     { name: 'Coucou - Koffi', link: ['/Coucou', 'HZNKqR6C1cE'] },
     { name: 'Ngobila - Koffi', link: ['/Ngobila', 'ka-M15DX0Pw'] },
