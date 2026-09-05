@@ -17,8 +17,9 @@ export interface MediaItem {
 })
 export class ImageMp4Component {
   items: MediaItem[] = [
-  
-    {type: 'image', src: 'assets/plantation/abouture1.jpeg'},
+    {type: 'video', src: 'assets/mp3/NdonkwaBilanga.mp4', placeholder: 'assets/mp3/NdongwaPicture.jpg' },
+    {type: 'image', src: 'assets/mp3/Ndongwa1.jpeg'},
+    {type: 'image', src: 'assets/mp3/Ndongwa2.jpeg'},
     {type: 'image', src: 'assets/plantation/abouture2.jpeg'},
     
   /*   { type: 'audio', src: 'assets/audio1.mp3', placeholder: 'assets/audio-thumb.jpg' },
@@ -26,7 +27,7 @@ export class ImageMp4Component {
     { type: 'video', src: 'assets/video2.mp4', placeholder: 'assets/video-thumb2.jpg' },
     { type: 'image', src: 'assets/img3.jpg' }, */
 
-
+    
     {type: 'image', src: 'assets/plantation/Tracteur1.jpeg'},
     {type: 'image', src: 'assets/plantation/Tracteur2.jpeg'},
 /*     {type: 'image', src: 'assets/plantation/bouture1.jpeg' }, */
@@ -51,7 +52,7 @@ export class ImageMp4Component {
     {type: 'image', src: 'assets/plantation/bilanga9.jpeg' }, 
     {type: 'image', src: 'assets/plantation/bilanga10.jpeg'}, 
     {type: 'video', src: 'assets/mp3/RevieuBilanga.mp4', placeholder: 'assets/images/RevieuBilanga.jpg' },
-    
+    //src/assets/mp3/NdonkwaBilanga.mp4
   ];
 
   visibleItems: MediaItem[] = [];
