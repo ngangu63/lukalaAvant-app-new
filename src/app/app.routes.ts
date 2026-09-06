@@ -73,6 +73,7 @@ export const routes: Routes = [
   { path: 'LikeALady/:videoId', component: YoutubeComponent },
   { path: 'WhatToKnow/:videoId', component: YoutubeComponent },
   { path: 'CoastLine/:videoId', component: YoutubeComponent },
+  { path: 'MamaWasAnAngel/:videoId', component: YoutubeComponent },
   { path: 'PrendSoinDelle/:videoId', component: YoutubeComponent },
   { path: 'Fideles/:videoId', component: YoutubeComponent },
   { path: 'Shiver/:videoId', component: YoutubeComponent },
