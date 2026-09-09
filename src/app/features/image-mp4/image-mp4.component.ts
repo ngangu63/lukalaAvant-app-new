@@ -1,11 +1,11 @@
-import { Component, Input } from '@angular/core';
+
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// media-item.model.ts
 export interface MediaItem {
   type: 'image' | 'video' | 'audio';
-  src: string;          // real media (mp4/mp3/image)
-  placeholder?: string; // image shown before play
+  src: string;
+  placeholder?: string;
 }
 
 @Component({
@@ -16,47 +16,117 @@ export interface MediaItem {
   styleUrls: ['./image-mp4.component.css'],
 })
 export class ImageMp4Component {
+
   items: MediaItem[] = [
-    {type: 'video', src: 'assets/mp3/NdonkwaBilanga.mp4', placeholder: 'assets/mp3/NdongwaPicture.jpg' },
-    {type: 'image', src: 'assets/mp3/Ndongwa1.jpeg'},
-    {type: 'image', src: 'assets/mp3/Ndongwa2.jpeg'},
-    {type: 'image', src: 'assets/plantation/abouture2.jpeg'},
-    
-  /*   { type: 'audio', src: 'assets/audio1.mp3', placeholder: 'assets/audio-thumb.jpg' },
-    { type: 'image', src: 'assets/img2.jpg' },
-    { type: 'video', src: 'assets/video2.mp4', placeholder: 'assets/video-thumb2.jpg' },
-    { type: 'image', src: 'assets/img3.jpg' }, */
-
-    
-    {type: 'image', src: 'assets/plantation/Tracteur1.jpeg'},
-    {type: 'image', src: 'assets/plantation/Tracteur2.jpeg'},
-/*     {type: 'image', src: 'assets/plantation/bouture1.jpeg' }, */
-    {type: 'video', src: 'assets/mp3/bilanga12.mp4', placeholder: 'assets/plantation/bilanga12.jpg' },
-    {type: 'video', src: 'assets/mp3/bilanga11.mp4', placeholder: 'assets/plantation/bilanga11.jpeg' },
-    {type: 'video', src: 'assets/mp3/bouture1.mp4', placeholder: 'assets/plantation/bouture1.jpeg' },
-    {type: 'image', src: 'assets/plantation/bouture2.jpeg' },
-
-    {type: 'image', src: 'assets/plantation/bouture3.jpeg' },
-    {type: 'image', src: 'assets/plantation/bouture4.jpeg' },
-    {type: 'image', src: 'assets/plantation/bouture5.jpeg' },
-    {type: 'image', src: 'assets/plantation/bouture6.jpeg' }, 
-    
-    {type: 'image', src: 'assets/plantation/bilanga1.jpeg' },
-  
-    {type: 'image', src: 'assets/plantation/bilanga3.jpeg' },
-    {type: 'image', src: 'assets/plantation/bilanga4.jpeg' },
-    {type: 'image', src: 'assets/plantation/bilanga5.jpeg' },
-    {type: 'image', src: 'assets/plantation/bilanga6.jpeg' }, 
-    {type: 'image', src: 'assets/plantation/bilanga7.jpeg' }, 
-    {type: 'image', src: 'assets/plantation/bilanga8.jpeg' },
-    {type: 'image', src: 'assets/plantation/bilanga9.jpeg' }, 
-    {type: 'image', src: 'assets/plantation/bilanga10.jpeg'}, 
-    {type: 'video', src: 'assets/mp3/RevieuBilanga.mp4', placeholder: 'assets/images/RevieuBilanga.jpg' },
-    //src/assets/mp3/NdonkwaBilanga.mp4
+    {
+      type: 'video',
+      src: 'assets/mp3/NdonkwaBilanga.mp4',
+      placeholder: 'assets/mp3/NdongwaPicture.jpg'
+    },
+    {
+      type: 'image',
+      src: 'assets/mp3/Ndongwa1.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/mp3/Ndongwa2.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/abouture2.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/Tracteur1.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/Tracteur2.jpeg'
+    },
+    {
+      type: 'video',
+      src: 'assets/mp3/bilanga12.mp4',
+      placeholder: 'assets/plantation/bilanga12.jpg'
+    },
+    {
+      type: 'video',
+      src: 'assets/mp3/bilanga11.mp4',
+      placeholder: 'assets/plantation/bilanga11.jpeg'
+    },
+    {
+      type: 'video',
+      src: 'assets/mp3/bouture1.mp4',
+      placeholder: 'assets/plantation/bouture1.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/bouture2.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/bouture3.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/bouture4.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/bouture5.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/bouture6.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/bilanga1.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/bilanga3.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/bilanga4.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/bilanga5.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/bilanga6.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/bilanga7.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/bilanga8.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/bilanga9.jpeg'
+    },
+    {
+      type: 'image',
+      src: 'assets/plantation/bilanga10.jpeg'
+    },
+    {
+      type: 'video',
+      src: 'assets/mp3/RevieuBilanga.mp4',
+      placeholder: 'assets/images/RevieuBilanga.jpg'
+    }
   ];
 
   visibleItems: MediaItem[] = [];
+
   playingIndex: number | null = null;
+
+  // Video displayed in full-screen overlay
+  fullscreenVideo: MediaItem | null = null;
 
   currentIndex = 0;
   pageSize = 4;
@@ -70,6 +140,7 @@ export class ImageMp4Component {
       this.currentIndex,
       this.currentIndex + this.pageSize
     );
+
     this.playingIndex = null;
   }
 
@@ -89,13 +160,30 @@ export class ImageMp4Component {
 
   playMedia(index: number) {
     this.playingIndex = index;
+
+    const item = this.visibleItems[index];
+
+    if (item.type === 'video') {
+      this.openFullscreenVideo(item);
+    }
+  }
+
+  openFullscreenVideo(item: MediaItem) {
+    this.fullscreenVideo = item;
+  }
+
+  closeFullscreenVideo() {
+    this.fullscreenVideo = null;
   }
 
   getRows() {
-    const rows = [];
+    const rows: MediaItem[][] = [];
+
     for (let i = 0; i < this.visibleItems.length; i += 2) {
       rows.push(this.visibleItems.slice(i, i + 2));
     }
+
     return rows;
   }
 }
+
