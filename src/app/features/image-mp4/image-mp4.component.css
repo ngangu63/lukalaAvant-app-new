@@ -125,32 +125,3 @@
   border-radius: 0;
 }
 
-
-/* Close button */
-.close-button {
-  position: absolute;
-
-  top: 20px;
-  right: 25px;
-
-  z-index: 100000;
-
-  width: 45px;
-  height: 45px;
-
-  border: none;
-  border-radius: 50%;
-
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-
-  font-size: 25px;
-  font-weight: bold;
-
-  cursor: pointer;
-}
-
-.close-button:hover {
-  background: rgba(255, 0, 0, 0.8);
-}
-

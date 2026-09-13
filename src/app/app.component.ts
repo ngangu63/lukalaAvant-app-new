@@ -207,8 +207,9 @@ export class AppComponent {
     { name: 'Selia zozo - Papa Noel', link: ['/SeliaZozo', 'aU3hSzW3j3c'] },
     { name: 'Tangawisi', link: ['/Tangawisi', 'Td34YSYubvA'] },
     { name: 'Prolongation - Karmapa', link: ['/Prolongation', 'k3_odBeWt44'] },
-    { name: 'Ndaya paradis', link: ['/NdayaParadis', '-FcW4Wexciw'] },
-
+    { name: 'Ndaya paradis - Rochereau Tabu Ley', link: ['/NdayaParadis', '-FcW4Wexciw'] },
+    { name: 'Diarrhée verbale - SIMARO et TP OK JAZZ', link: ['/DiarrhéeVerbale', '5ILUjRV0Erw'] },
+    { name: 'Vice Versa - Madilu System ', link: ['/ViceVersa', 'uysXLxj4mIk'] },
     { name: 'Nzele - Madilu System', link: ['/NzeleMadilu', 'FGkEAN9lMzA'] },
     { name: 'Centieme Dossier - Fally Ipupa', link: ['/CentièmeDossier', 'gIfxaiLOjPQ'],},
     { name: 'Nzambe mokonzi- Bela Bela', link: ['/Nzambemokonzi', 'CXDRyznygQA'],},
