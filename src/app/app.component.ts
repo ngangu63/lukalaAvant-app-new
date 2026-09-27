@@ -218,7 +218,7 @@ export class AppComponent {
     { name: 'Orgasy - Fally Ipupa', link: ['/Orgasy', 'ihmtjqUyFWQ'] },
     { name: 'Point Final', link: ['/PointFinal', 'ulznRM_QQPc'] },
     { name: 'Nzoto Na Nga Se Moko', link: ['/NzotoMoko', 'Po0U1sF45S0'] },
-    { name: 'Faya Tess - MOLANGI YA MALASI', link: ['/MolangiYaMAalasi', '2bbfEcqyGNE'] }, 
+    { name: 'MOLANGI YA MALASI', link: ['/MolangiYaMAalasi', '2bbfEcqyGNE'] }, 
     { name: 'Maya - Simaro', link: ['/Maya', 'e9cKkBGleGE'] },
     { name: 'Maya (2nd Version) - Simaro', link: ['/MayaVersion2', '1oPDUjb7j-o'] },
     { name: 'Zéro faute - Koffi', link: ['/ZéroFaute', 'sDCoVhUilys'] },
