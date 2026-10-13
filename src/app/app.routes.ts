@@ -147,6 +147,8 @@ export const routes: Routes = [
   { path: 'mokoloYamassiya/:videoId', component: YoutubeComponent },
   { path: 'NoCondition/:videoId', component: YoutubeComponent },
   { path: 'Ngwende/:videoId', component: YoutubeComponent },
+  { path: 'pourquoiMoi/:videoId', component: YoutubeComponent },
+  { path: 'whyMe/:videoId', component: YoutubeComponent },
   { path: 'Lamentations/:videoId', component: YoutubeComponent },
   { path: 'KitiOfandi/:videoId', component: YoutubeComponent },
   { path: 'NaTielaYoMotema/:videoId', component: YoutubeComponent },

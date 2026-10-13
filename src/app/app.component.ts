@@ -186,7 +186,9 @@ export class AppComponent {
   ];
 
   congoMusicList = [
-    
+
+    { name: 'Freddy Connect- 𝐏𝐨𝐮𝐫𝐪𝐮𝐨𝐢 𝐌𝐨𝐢 ?', link: ['/pourquoiMoi', 'sFyH693lXmE'] },
+    { name: 'Freddy Connect- 𝐖hy me?', link: ['/whyMe', 'XqD62uaUK3E'] },
     { name: 'Koukoulou - Koffi', link: ['/Koukoulou', 'j8gCb6bKC44'] },
     { name: 'Hortense', link: ['/Hortense', 'VpvDSz8skb8'] },
     { name: 'jean goubald Feat Lokua kanza dans Eve "Norme"', link: ['/NormeJeanGoubald', 'wlx4OutsSzM'] },
