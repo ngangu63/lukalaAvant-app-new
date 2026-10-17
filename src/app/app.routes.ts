@@ -139,6 +139,7 @@ export const routes: Routes = [
   { path: 'AlwaysLoveYou/:videoId', component: YoutubeComponent },
   { path: 'USA/:videoId', component: YoutubeComponent },
   { path: 'LoveTheme/:videoId', component: YoutubeComponent },
+  { path: 'LavieEnRose/:videoId', component: YoutubeComponent },
   { path: 'Maze/:videoId', component: YoutubeComponent },
   { path: 'DontEverWonder/:videoId', component: YoutubeComponent },
   { path: 'lagrandeur/:videoId', component: YoutubeComponent },

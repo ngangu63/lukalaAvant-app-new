@@ -186,7 +186,7 @@ export class AppComponent {
   ];
 
   congoMusicList = [
-
+    { name: 'Freddy Connect- La vie en rose de Cindy Le Cœur', link: ['/LavieEnRose','ED7SbHS1ClI'] },
     { name: 'Freddy Connect- 𝐏𝐨𝐮𝐫𝐪𝐮𝐨𝐢 𝐌𝐨𝐢 ?', link: ['/pourquoiMoi', 'sFyH693lXmE'] },
     { name: 'Freddy Connect- 𝐖hy me?', link: ['/whyMe', 'XqD62uaUK3E'] },
     { name: 'Koukoulou - Koffi', link: ['/Koukoulou', 'j8gCb6bKC44'] },
