@@ -106,7 +106,7 @@ export class AppComponent {
 
   worldMusicList = [  
 
-
+    { name: 'Amores do Mara- Come a Little Closer', link: ['/ComeALittleCloser', 'h-8Pe9u0JEQ'] },
     { name: 'ROCHA MARIA - NO CONDITION IS PERMANENT', link: ['/NoCondition', 'MfSikOtIHpw'] },
     { name: 'Benny Rivers – Step by Step In Time', link: ['/StepByStep', 'lRGG1dqWotU'] },  
     { name: 'Benny Rivers – I Won"t Fall Again', link: ['/FallAgain', '8KrLFLdlAqA'] },  
@@ -268,6 +268,7 @@ export class AppComponent {
   ];
 
   religiousMusicList=[
+    { name: 'Tee Moa - Thank you Baba', link: ['/ThankYouBaba', 'e1EtLtxzHTY'] },
     { name: "La Grandeur De L’éternel - Matou Samuel", link: ['/lagrandeur', 'p8awDlbykVk'] },
     { name: "Mwana Mpate - Gael", link: ['/mwanaMpate', 'tNhX2SknEYQ'] },  
     { name: "Makolo ya massiya - Carlyto Lassa", link: ['/mokoloYamassiya', 'G-t7sh4M7wY'] }, 
