@@ -106,7 +106,7 @@ export class AppComponent {
 
   worldMusicList = [  
 
-    { name: 'Amores do Mara- Come a Little Closer', link: ['/ComeALittleCloser', 'h-8Pe9u0JEQ'] },
+    { name: 'Julius Lava - Come a Little Closer', link: ['/ComeALittleCloser', 'j0h-xnpMWxk'] },
     { name: 'ROCHA MARIA - NO CONDITION IS PERMANENT', link: ['/NoCondition', 'MfSikOtIHpw'] },
     { name: 'Benny Rivers – Step by Step In Time', link: ['/StepByStep', 'lRGG1dqWotU'] },  
     { name: 'Benny Rivers – I Won"t Fall Again', link: ['/FallAgain', '8KrLFLdlAqA'] },  
