@@ -280,6 +280,7 @@ export class AppComponent {
     { name: "Reconnaissance - Carlyto Lassa", link: ['/Reconnaissance', 'QS86Xr0i9Yc'] },  
     { name: "Nalaki yo - Moise Matuta", link: ['/NalakiYo', 'eSX56P5hbH0'] },  
     { name: "Biso ba oyo- Moise Matuta", link: ['/BisoBaOyo', 'ery0dpkVK80'] },  
+    { name: 'Reception de nouveaux élève - ERM', link: ['/Erm', 'x2QZ_tlLgEQ'] },
     
   ]
 
