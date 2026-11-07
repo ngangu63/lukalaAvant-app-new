@@ -107,7 +107,7 @@ export class AppComponent {
   worldMusicList = [  
     
     { name: 'Luther Vandross - Power of Love', link: ['/PowerOfLove', 'LlLsbL2LJKw'] },
-    { name: 'Julius Lava - Come a Little Closer', link: ['/ComeALittleCloser', 'j0h-xnpMWxk'] },
+    { name: 'Julius Lava - Come a Little Closer', link: ['/ComeALittleCloser', 'DoTBVYOnC_g'] },
     { name: 'ROCHA MARIA - NO CONDITION IS PERMANENT', link: ['/NoCondition', 'MfSikOtIHpw'] },
     { name: 'Benny Rivers – Step by Step In Time', link: ['/StepByStep', 'lRGG1dqWotU'] },  
     { name: 'Benny Rivers – I Won"t Fall Again', link: ['/FallAgain', '8KrLFLdlAqA'] },  
