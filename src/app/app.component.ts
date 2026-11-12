@@ -105,7 +105,9 @@ export class AppComponent {
   }
 
   worldMusicList = [  
-    
+    { name: 'LIONEL RICHIE - You Are', link: ['/YouAre', 'h8t1sXH07fo'] },
+    { name: 'LIONEL RICHIE - Stuck On You', link: ['/StuckOnYou', '-dXUqF1td1w'] },
+    { name: 'LIONEL RICHIE - Stuck On You Original', link: ['/StuckOnYouOriginal', 'eEjbcOe9hsc'] },
     { name: 'Luther Vandross - Power of Love', link: ['/PowerOfLove', 'LlLsbL2LJKw'] },
     { name: 'Julius Lava - Come a Little Closer', link: ['/ComeALittleCloser', 'DoTBVYOnC_g'] },
     { name: 'ROCHA MARIA - NO CONDITION IS PERMANENT', link: ['/NoCondition', 'MfSikOtIHpw'] },
